@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="AS | Android"
+        android:textColor="#337AF1"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginTop="50dp"
+        android:text="Winner : "
+        android:textColor="#A82BBD"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_win"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Player 1"
+        android:textColor="#CB7911"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_win"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:text="Player 2"
+        android:textColor="#DF8411"
+        android:textSize="30sp" />
+
+
+    <ImageView
+        android:id="@+id/dice2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/dice_background"
+        android:src="@drawable/dice6" />
+
+    <ImageView
+        android:id="@+id/dice1"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/dice_background"
+        android:src="@drawable/dice6" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/button_background"
+        android:text="ROLL THE DICE"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+</RelativeLayout>
